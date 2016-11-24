@@ -1,0 +1,55 @@
+good_one:
+    id: 1
+    name: iPhone
+    price: 200000
+    count: 1
+    manufacture_date: 29.06.2007
+    issue_id: 1
+
+good_two:
+    id: 2
+    name: iPhone 3G
+    price: 10000
+    count: 1
+    manufacture_date: 10.06.2008
+    issue_id: 2
+
+good_three:
+    id: 3
+    name: iPhone 3GS
+    price: 15000
+    count: 1
+    manufacture_date: 08.06.2009
+    issue_id: 3
+
+good_four:
+    id: 4
+    name: iPhone 4
+    price: 23000
+    count: 1
+    manufacture_date: 07.06.2010
+    issue_id: 4
+
+good_five:
+    id: 5
+    name: iPhone 4S
+    price: 25000
+    count: 1
+    manufacture_date: 04.10.2011
+    issue_id: 5
+
+good_six:
+    id: 6
+    name: iPhone 5
+    price: 30000
+    count: 1
+    manufacture_date: 19.09.2012
+    issue_id: 6
+
+good_seven:
+    id: 7
+    name: iPhone 5S
+    price: 30000
+    count: 1
+    manufacture_date: 10.09.2013
+    issue_id: 7

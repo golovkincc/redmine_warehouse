@@ -1,0 +1,8 @@
+<div class="contextual">
+  <%= link_to l(:button_edit), edit_project_good_path(@project, @good),
+              :class => 'icon icon-edit' if Good.editable?(@project) %>
+  <%= link_to l(:button_delete), project_good_path(@project, @good),
+              :data => {:confirm => l(:text_good_destroy_confirmation)},
+              :method => :delete,
+              :class => 'icon icon-del' if Good.deletable?(@project) %>
+</div>

@@ -1,0 +1,25 @@
+<%= render :partial => 'action_menu' %>
+
+<h2><%= h("#{@good.name} ##{@good.id}") %></h2>
+
+<div class="issue details">
+
+  <div class="subject">
+    <div><h3><%= @good.name %></h3></div>
+  </div>
+
+  <div class="attributes">
+    <%= issue_fields_rows do |rows|
+      rows.left l(:field_issue), link_to(@good.issue.subject, issue_path(@good.issue))
+      rows.left l(:field_name), @good.name
+      rows.left l(:field_price), @good.price
+      rows.left l(:field_count), @good.count
+      rows.left l(:field_manufacture_date), format_date(@good.manufacture_date)
+    end %>
+  </div>
+</div>
+
+<div style="clear: both;"></div>
+<%= render :partial => 'action_menu' %>
+
+<div style="clear: both;"></div>

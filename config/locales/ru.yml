@@ -1,0 +1,16 @@
+ru:
+  warehouse_title: Склад
+
+  permission_add_goods: Добавление товаров
+  permission_view_goods: Просмотр товаров
+  permission_edit_goods: Редактирование товаров
+  permission_delete_goods: Удаление товаров
+
+  label_good_new: Новый товар
+  label_good_plural: Товары
+  field_name: Наименование
+  field_price: Стоимость
+  field_count: Кол-во
+  field_manufacture_date: Дата производства
+  notice_good_successful_create: Товар успешно создан
+  text_good_destroy_confirmation: Вы уверены, что хотите удалить товар?

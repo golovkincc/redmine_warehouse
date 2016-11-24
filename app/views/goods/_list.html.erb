@@ -1,0 +1,24 @@
+<div class="autoscroll">
+  <table class="list issues <%= sort_css_classes %>">
+    <thead>
+    <tr>
+      <%= sort_header_tag('name', :caption => l(:field_name)) %>
+      <%= content_tag('th', h(l(:field_price))) %>
+      <%= content_tag('th', h(l(:field_count))) %>
+      <%= content_tag('th', h(l(:field_manufacture_date))) %>
+      <%= content_tag('th', h(l(:field_issue))) %>
+    </tr>
+    </thead>
+    <tbody>
+      <% @goods.each do |good| %>
+        <tr class="<%= cycle("odd", "even") -%>">
+          <td class=""><%= link_to good.name, project_good_path(@project, good) %></td>
+          <td class=""><%= good.price %></td>
+          <td class=""><%= good.count %></td>
+          <td class=""><%= format_date good.manufacture_date %></td>
+          <td class=""><%= link_to good.issue.subject, issue_path(good.issue) %></td>
+        </tr>
+      <% end -%>
+    </tbody>
+  </table>
+</div>

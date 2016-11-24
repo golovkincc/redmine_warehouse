@@ -1,0 +1,13 @@
+<%= labelled_fields_for :good, @good do |f| %>
+
+    <p><%= f.select :issue_id, project_issue_options_for_select(@project), {:required => true} %></p>
+
+    <p><%= f.text_field :name, :size => 80, :maxlength => 255, :required => true %></p>
+
+    <p><%= f.number_field :price, :size => 40, :maxlength => 40 %></p>
+
+    <p><%= f.number_field :count, :size => 4, :maxlength => 10, :value => 1 %></p>
+
+    <p><%= f.date_field :manufacture_date %></p>
+
+<% end %>

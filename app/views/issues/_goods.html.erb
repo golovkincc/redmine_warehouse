@@ -1,0 +1,13 @@
+<% if @issue.present? && @issue.goods.any? && Good.visible?(@project) %>
+    <hr />
+    <div id="checklist">
+
+      <p><strong><%=l(:label_good_plural)%></strong></p>
+
+      <ul id="checklist_items">
+        <% @issue.goods.each do |good_item| %>
+            <li><%= link_to good_item.name, project_good_path(@project, good_item) %></li>
+        <% end %>
+      </ul>
+    </div>
+<% end %>
