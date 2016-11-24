@@ -6,7 +6,7 @@ Redmine::Plugin.register :redmine_warehouse do
   author 'Sergey Golovkin'
   description 'Redmine Warehouse plugin for managing issue goods'
   version '0.0.1'
-  url 'http://example.com/path/to/plugin'
+  url 'https://github.com/golovkincc/redmine_warehouse'
   author_url 'https://golovkin.cc/about'
 
   project_module :redmine_warehouse do
